@@ -17,7 +17,7 @@ import java.util.List;
 public class ProductoController {
     private IProductoService IProductoService;
 
-    @GetMapping("")
+    @GetMapping("/listado")
     public String listarProductos(Model model){
         model.addAttribute("listarproductos" ,
                 IProductoService.listarProductos());
